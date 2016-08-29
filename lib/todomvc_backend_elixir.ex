@@ -8,6 +8,7 @@ defmodule TodomvcBackendElixir do
 
     children = [
       # Define workers and child supervisors to be supervised
+      worker(TodomvcBackendElixir.Repo, []),
       # worker(TodomvcBackendElixir.Worker, [arg1, arg2, arg3]),
     ]
 

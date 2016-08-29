@@ -14,7 +14,7 @@ defmodule TodomvcBackendElixir.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger, :postgrex],
+    [applications: [:logger, :postgrex, :cowboy, :plug],
      mod: {TodomvcBackendElixir, []}]
   end
 
@@ -29,6 +29,8 @@ defmodule TodomvcBackendElixir.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [{:ecto, "~> 2.0"},
-     {:postgrex, "0.11.2"}]
+     {:postgrex, "0.11.2"},
+     {:cowboy, "~> 1.0.0"},
+     {:plug, "~> 1.0"}]
   end
 end

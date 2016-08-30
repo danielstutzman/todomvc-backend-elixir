@@ -14,8 +14,7 @@ defmodule TodomvcBackendElixir.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger, :postgrex, :cowboy, :plug],
-     mod: {TodomvcBackendElixir, []}]
+    [applications: [:logger, :postgrex, :cowboy, :plug]]
   end
 
   # Dependencies can be Hex packages:

@@ -1,0 +1,2 @@
+#!/bin/bash -ex
+mix run -e 'TodomvcBackendElixir.start(nil, nil)' --no-halt -- --port 4001
